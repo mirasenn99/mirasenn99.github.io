@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    .navbar {
+  background-color: #b393ff;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar.navbar-inverse {
+  background-color: #b393ff; 
+}
+
+.navbar.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar.navbar-inverse .navbar-nav > li > a:hover {
+  color: #4b0082;
+}
+
+.navbar.navbar-inverse .navbar-brand {
+  color: white; 
+}
+
+.navbar.navbar-inverse .navbar-brand:hover {
+  color: #4b0082; 
+}
+
+.navbar.navbar-inverse .navbar-nav > .active > a {
+  color: #4b0082; 
+  font-weight: bold;
+}
+
+    
+
+    footer {
+      background-color: #b39ffa;
+      padding: 25px;
+    }
+
+    .jumbotron {
+  background-image: url('https://giffiles.alphacoders.com/214/214384.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(10, 10, 10);
+  padding: 50px 25px;
+}
+
+
+    .container img {
+      margin-bottom: 20px;
+    }
+
+   
+.stylish-contact-form {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.stylish-contact-form h2 {
+  color: #6a1b9a;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.stylish-contact-form p {
+  color: #8e24aa;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.stylish-contact-form .form-row {
+  margin-bottom: 20px;
+}
+
+.stylish-contact-form input, .stylish-contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #6a1b9a;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.stylish-contact-form input:focus, .stylish-contact-form textarea:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 5px rgba(106, 27, 154, 0.3);
+  background-color: #f3e5f5;
+}
+
+.stylish-contact-form textarea {
+  resize: none;
+}
+
+.stylish-contact-form .gradient-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #6a1b9a, #8e24aa);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stylish-contact-form .gradient-btn:hover {
+  background: linear-gradient(45deg, #8e24aa, #6a1b9a);
+  box-shadow: 0 5px 15px rgba(142, 36, 170, 0.4);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px; 
+}
+.container {
+      margin-top: 30px;
+    }
+
+    .portfolio-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease; 
+      border-radius: 10px;
+    }
+
+    
+    .portfolio-container:hover .portfolio-img {
+      transform: scale(1.2); 
+    }
+
+    .portfolio-description {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+    
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  background-color: #f4f4f4;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Lobster', cursive; 
+  color: #6a1b9a; 
+}
+
+
+.navbar-brand, .navbar-nav > li > a {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: bold;
+}
+
+
+.portfolio-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.stylish-contact-form h2 {
+  font-family: 'Lobster', cursive;
+  color: #6a1b9a;
+  font-size: 30px; 
+}
+
+.stylish-contact-form p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #8e24aa; 
+}
+
+
+.stylish-contact-form input, .stylish-contact-form textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #6a1b9a;
+}
+
+
+.stylish-contact-form .gradient-btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Miruna Simona</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center" id="home">
+  <h1>Miruna Simona</h1>
+  <p>Artist | Designer | Digital Art</p>
+</div>
+
+
+<div class="container" id="about" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Me</h2>
+      <p>Hello! I'm Miruna, a passionate artist who specializes in digital arts and also enjoys designing websites from time to time.</p>
+      <p>My aim is to build eye-catching websites to showcase my various artworks.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b270471-3215-4899-b6c7-cd999e2470a0/d8q1a5e-a7edae59-bb72-43a4-8128-e4afd69e5dde.png/v1/fill/w_894,h_894,q_70,strp/inspiration_of_halong_bay___vietnam_by_mirasim_d8q1a5e-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcLzFiMjcwNDcxLTMyMTUtNDg5OS1iNmM3LWNkOTk5ZTI0NzBhMFwvZDhxMWE1ZS1hN2VkYWU1OS1iYjcyLTQzYTQtODEyOC1lNGFmZDY5ZTVkZGUucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.BReU_JErdrl5xc828-NiXCBU3U2EFwPI0mtEsgZVGfI" 
+      alt="Miruna Simona" style="width:100%; border-radius: 10px;">
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="portfolio" style="margin-top:30px">
+  <h2>Portfolio</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b270471-3215-4899-b6c7-cd999e2470a0/d8gexw2-19e91024-92e7-416d-b9a1-cc761945fa51.png/v1/fill/w_923,h_866/wonders_by_mirasim_d8gexw2-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUwMSIsInBhdGgiOiJcL2ZcLzFiMjcwNDcxLTMyMTUtNDg5OS1iNmM3LWNkOTk5ZTI0NzBhMFwvZDhnZXh3Mi0xOWU5MTAyNC05MmU3LTQxNmQtYjlhMS1jYzc2MTk0NWZhNTEucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.PvuKuDHQGuYbtHNCbJO4YLbyqzL1i9dm81r4_rjaLTc" alt="Project 1" class="portfolio-img">
+      <p>Project 1: Landscape art</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b270471-3215-4899-b6c7-cd999e2470a0/d91a2tl-a76456dc-de37-49ef-ad96-654c85978d72.png/v1/fill/w_1192,h_670,q_70,strp/outside_to_the_abiss_by_mirasim_d91a2tl-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvMWIyNzA0NzEtMzIxNS00ODk5LWI2YzctY2Q5OTllMjQ3MGEwXC9kOTFhMnRsLWE3NjQ1NmRjLWRlMzctNDllZi1hZDk2LTY1NGM4NTk3OGQ3Mi5wbmciLCJ3aWR0aCI6Ijw9MTM2NiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hnLkIZvOLguqEJdvUYe9PGSWNvVrRJu3XxJWkVgJwYk" alt="Project 2" class="portfolio-img">
+      <p>Project 2: Photoshop experiments</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b270471-3215-4899-b6c7-cd999e2470a0/d7jkv46-0abb5a89-5aa5-4ed1-be82-22922fca6376.png/v1/fill/w_894,h_894,q_70,strp/free_and_innocent_by_mirasim_d7jkv46-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMWIyNzA0NzEtMzIxNS00ODk5LWI2YzctY2Q5OTllMjQ3MGEwXC9kN2prdjQ2LTBhYmI1YTg5LTVhYTUtNGVkMS1iZTgyLTIyOTIyZmNhNjM3Ni5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.451MxOWrw7DEkZ3gyNgB6dgjjUcZErdivY9qeuZNJs8" alt="Project 3" class="portfolio-img">
+      <p>Project 3: Portrait work</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container" id="contact">
+  <div class="stylish-contact-form">
+    <h2>Get in Touch</h2>
+    <p>If you wish to contact me, fill the form below!</p>
+    <form action="#" method="POST">
+      <div class="form-row">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-row">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-row">
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="gradient-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+<footer class="text-center">
+  <p>&copy; 2024 Miruna Simona. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
