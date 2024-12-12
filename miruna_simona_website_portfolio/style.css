@@ -1,0 +1,381 @@
+/* Sidebar and buttons color scheme */
+.w3-sidebar {
+    background-color: #e6e6fa !important; /* Light purple sidebar */
+  }
+  
+  .w3-button, .w3-bar-item {
+    background-color: #e6e6fa !important; /* Light purple buttons */
+    color: #4b0082 !important; /* Dark purple text */
+  }
+  
+  .w3-button:hover, .w3-bar-item:hover {
+    background: linear-gradient(to right, #d8bfd8, #e6e6fa) !important;
+    color: #fff;
+  }
+  
+  /* Footer background color */
+  footer {
+    background-color: #e6e6fa !important;
+    color: #4b0082;
+  }
+
+  .social-icons a i {
+    font-size: 36px; /* Adjust the size of the icons */
+    background-image: linear-gradient(45deg, #9b59b6, #8a2be2); /* Purple gradient */
+    -webkit-background-clip: text; /* Ensure the gradient applies to the text (icons) */
+    color: transparent; /* Remove the default icon color */
+    transition: background-image 0.3s ease; /* Smooth transition */
+  }
+  
+  .social-icons a:hover i {
+    background-image: linear-gradient(45deg, #8a2be2, #9b59b6); /* Slight change on hover for effect */
+  }
+
+  .bgimg {
+    background-image: url('https://giffiles.alphacoders.com/214/214384.gif'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 999; 
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.9); /* Dark transparent background */
+}
+
+/* Modal Image */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%; 
+  max-width: 700px; 
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Caption text */
+#caption {
+  margin: 15px 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Close button (X) */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, 
+.close:focus {
+  color: #bbb;
+  cursor: pointer;
+}
+
+
+/* Photo container and overlay */
+.photo-container {
+  position: relative; 
+}
+
+.photo-container img {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+
+.photo-container:hover .overlay {
+  opacity: 1; 
+}
+
+.overlay-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Heading color */
+#about h2 {
+  color: #5d40c5; /* Purple color */
+}
+
+/* Background for the entire progress bar */
+.w3-light-grey {
+  background-color: #f3e5f5 !important; /* Light purple background */
+}
+
+/* Background for the filled progress part */
+.w3-container.w3-center.w3-padding-small {
+  background-color: #9a7bf0 !important; /* Deep purple for the filled bar */
+  color: white !important; /* White text to contrast with purple background */
+}
+
+/* Style the portfolio images */
+.preview-image {
+  width: 100%;
+  border-radius: 8px; /* Smooth edges */
+  filter: blur(6px); /* Apply a blur effect initially */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, filter 0.5s ease; /* Smooth transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  opacity: 1; /* Keep the image visible */
+}
+
+/* Hover effect to reveal the image */
+.portfolio-item:hover .preview-image {
+  filter: blur(0); /* Remove blur on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Wrapper for each portfolio item */
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* Overlay that appears when hovering over images */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  opacity: 0; /* Initially hide the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px; /* Rounded corners to match the image */
+  transition: opacity 0.3s ease;
+}
+
+/* Show the overlay on hover */
+.portfolio-item:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.plan-box {
+  background: linear-gradient(145deg, #5a43b859, #9378ff);
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.plan-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.features {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.features li {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #666;
+}
+
+.w3-button.w3-purple {
+  background-color: #7354ff;
+  color: #fff;
+}
+
+.w3-button.w3-purple:hover {
+  background-color: #7A1FBF;
+}
+
+.contact-box {
+  background: linear-gradient(145deg, #5a43b859, #9378ff);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.contact-box h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-box p {
+  color: #1c0f4b;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input, 
+.input-group textarea {
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 16px;
+  color: #333;
+  background: #f0f0f0;
+  border: 2px solid #e8e8e8;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+  border-color: #8c52ff;
+}
+
+.input-group label {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  color: #999;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  left: 15px;
+  font-size: 12px;
+  color: #8c52ff;
+}
+
+.input-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.luxury-button {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(145deg, #8c52ff, #6923e7);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(140, 82, 255, 0.3);
+}
+
+.luxury-button:hover {
+  background: linear-gradient(145deg, #6923e7, #8c52ff);
+  box-shadow: 0 20px 40px rgba(140, 82, 255, 0.5);
+}
+
+.luxury-button i {
+  margin-right: 10px;
+}
+
+.luxury-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(140, 82, 255, 0.2);
+}
+
+.send-message-btn {
+  background-color: #cdb7ff; 
+  color: rgb(96, 45, 163); 
+  border: none; 
+  padding: 12px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 30px; 
+  width: 100%; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.send-message-btn i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.send-message-btn:hover {
+  background-color: #371792; 
+  transform: translateY(-2px); 
+}
+
+.send-message-btn:focus {
+  outline: none; /* Remove outline on focus */
+}
